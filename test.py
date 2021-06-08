@@ -10,5 +10,5 @@ soup = BeautifulSoup(html, 'html.parser')
 
 bookservices = soup.select('.title_text')
 
-for no, book in enumerate(bookeservices, 1):
+for no, book in enumerate(bookservices, 1):
   print(no, book.text.strip())
